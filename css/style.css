@@ -257,9 +257,8 @@ a:hover {
 }
 
 .list-ico span {
-  position: absolute;
-  top: 0;
-  right: 0;
+  color: #0078ff;
+  margin-right: 10px;
 }
 
 /*------/ Ico Circle /------*/
