@@ -52,10 +52,6 @@ function ContactForm() {
         errors={state.errors}
       />
       
-      <div>Loading</div>
-      <div></div>
-      <div>Your message has been sent. Thank you!</div>
-      
       <button type="submit" disabled={state.submitting}>Send Message</button>
     </form>
   );
