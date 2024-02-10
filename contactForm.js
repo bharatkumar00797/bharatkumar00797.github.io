@@ -1,7 +1,8 @@
+import React from 'react';
+import { useForm, ValidationError } from '@formspree/react';
 
 function ContactForm() {
-  import { useForm, ValidationError } from '@formspree/react';
-  import React from 'react';
+
   const [state, handleSubmit] = useForm("mzbnekbk");
 
   if (state.succeeded) {
