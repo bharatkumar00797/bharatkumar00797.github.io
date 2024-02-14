@@ -1,8 +1,3 @@
-/**
-* PHP Email Form Validation - v3.7
-* URL: https://bootstrapmade.com/php-email-form/
-* Author: BootstrapMade.com
-*/
 (function () {
   "use strict";
 
@@ -78,7 +73,7 @@
 
   function displayError(thisForm, error) {
     thisForm.querySelector('.loading').classList.remove('d-block');
-    
+
     // Check if error message contains problematic string
     if (error.message.includes('Error: {"next":"/thanks?language=en","ok":true}')) {
       // Display a generic error message
