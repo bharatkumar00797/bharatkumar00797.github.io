@@ -67,19 +67,25 @@ function App() {
 
 export default App;
 */
-
 import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 
 function ContactForm() {
   const [state, handleSubmit] = useForm("https://formspree.io/f/mzbnekbk");
 
+  const handleFormSubmit = async (e) => {
+    e.preventDefault();
+    await handleSubmit(e);
+    alert("Thank you.");
+    window.location.reload();
+  };
+
   if (state.succeeded) {
     return <p>Thanks for joining!</p>;
   }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleFormSubmit}>
       <label htmlFor="name">Your Name</label>
       <input id="name" type="text" name="name" required />
 
