@@ -1,5 +1,5 @@
 
-/*import React from 'react';
+import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 function ContactForm() {
 
@@ -66,7 +66,7 @@ function App() {
 }
 
 export default App;
-*/
+ /*
 import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 
@@ -112,3 +112,4 @@ function App() {
 }
 
 export default App;
+*/
