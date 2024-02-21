@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 function ContactForm() {
@@ -54,7 +53,6 @@ function ContactForm() {
       />
       
       <button type="submit" disabled={state.submitting}>Send Message</button>
-        
     </form>
   );
 }
