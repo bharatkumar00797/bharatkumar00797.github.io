@@ -66,9 +66,9 @@
           throw new Error(data ? data : 'Form submission failed and no error message returned from: ' + action);
         }
       })
-     /* .catch((error) => {
+     .catch((error) => {
         displayError(thisForm, error);
-      });*/
+      });
   }
 
  /* function displayError(thisForm, error) {
