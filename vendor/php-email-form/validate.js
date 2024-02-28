@@ -71,7 +71,7 @@
       });
   }
 
- /* function displayError(thisForm, error) {
+ function displayError(thisForm, error) {
     thisForm.querySelector('.loading').classList.remove('d-block');
 
     // Check if error message contains problematic string
@@ -84,6 +84,6 @@
     }
 
     thisForm.querySelector('.error-message').classList.add('d-block');
-  } */
+  } 
 
 })();
