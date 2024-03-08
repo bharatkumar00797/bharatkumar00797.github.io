@@ -1,8 +1,7 @@
 /**
-* Template Name: DevFolio
-* Updated: Jan 29 2024 with Bootstrap v5.3.2
-* Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
-* Author: BootstrapMade.com
+* Template Name: Bharatkumar Chandvani
+* Updated: March 08 2024 with Bootstrap v5.3.2
+* Author: Bharatkumar Chandvani
 * License: https://bootstrapmade.com/license/
 */
 (function() {
