@@ -65,17 +65,33 @@ function App() {
 
 export default App;
 */
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useForm, ValidationError } from '@formspree/react';
 
 function ContactForm() {
   const [state, handleSubmit] = useForm("https://formspree.io/f/mzbnekbk");
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    message: ''
+  });
 
   useEffect(() => {
     if (state.succeeded) {
       alert("Form submitted successfully!");
+      setFormData({
+        name: '',
+        email: '',
+        subject: '',
+        message: ''
+      });
     }
   }, [state.succeeded]);
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
 
   return (
     <form onSubmit={handleSubmit}>
@@ -84,6 +100,8 @@ function ContactForm() {
         id="name"
         type="text"
         name="name"
+        value={formData.name}
+        onChange={handleChange}
         required
       />
       
@@ -92,6 +110,8 @@ function ContactForm() {
         id="email"
         type="email"
         name="email"
+        value={formData.email}
+        onChange={handleChange}
         required
       />
       <ValidationError 
@@ -105,6 +125,8 @@ function ContactForm() {
         id="subject"
         type="text"
         name="subject"
+        value={formData.subject}
+        onChange={handleChange}
         required
       />
       
@@ -113,6 +135,8 @@ function ContactForm() {
         id="message"
         name="message"
         rows="5"
+        value={formData.message}
+        onChange={handleChange}
         required
       />
       <ValidationError 
