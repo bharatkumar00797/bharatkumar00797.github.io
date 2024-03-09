@@ -1,6 +1,6 @@
 /*!
  * purecounter.js - A simple yet configurable native javascript counter which you can count on.
- * Author: Stig Rex
+ * Author: Bharatkumar Chandvani
  * Version: 1.5.0
  * Url: https://github.com/srexi/purecounterjs
  * License: MIT
