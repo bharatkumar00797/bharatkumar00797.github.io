@@ -198,11 +198,6 @@ function ContactForm() {
   );
 }
 
-function App() {
-  return (
-    <ContactForm />
-  );
-}
 
 export default App;
 */
