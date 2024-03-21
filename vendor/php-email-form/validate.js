@@ -78,7 +78,7 @@
     if (error.message.includes('Error: {"next":"/thanks?language=en","ok":true}')) {
       // Display a generic error message
       thisForm.querySelector('.error-message').innerHTML = 'An error occurred. Please try again later.';
-    } else {
+    }else{
       // Display the actual error message
       thisForm.querySelector('.error-message').innerHTML = error;
     }
